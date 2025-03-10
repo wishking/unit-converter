@@ -1,5 +1,20 @@
 import streamlit as st
 
+# Custom CSS to change background color
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #f2f6;  /* Light grayish-blue background */
+    }
+    .stApp {
+        background-color: #dff6ff; /* Light blue */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.title("🌎 Unit Converter App")
 st.markdown("### Convert Length, Weight, and Time Instantly")
 st.write("Welcome! Select a category, enter a value, and get the conversion result in real time.")
